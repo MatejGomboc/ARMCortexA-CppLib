@@ -1,0 +1,16 @@
+* text=auto
+
+*.c     text
+*.cpp   text
+*.cc    text
+*.cxx   text
+*.h     text
+*.hpp   text
+*.txt   text
+*.md    text
+*.cmake text
+*.json  text
+
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
