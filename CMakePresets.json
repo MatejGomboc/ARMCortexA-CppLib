@@ -1,0 +1,48 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 28,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "cortex-a5",
+            "description": "Build for ARM Cortex-A5",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "cortex-a7",
+            "description": "Build for ARM Cortex-A7",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        },
+        {
+            "name": "cortex-a9",
+            "description": "Build for ARM Cortex-A9",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "cortex-a5",
+            "configurePreset": "cortex-a5"
+        },
+        {
+            "name": "cortex-a7",
+            "configurePreset": "cortex-a7"
+        },
+        {
+            "name": "cortex-a9",
+            "configurePreset": "cortex-a9"
+        }
+    ]
+}
